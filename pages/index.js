@@ -32,8 +32,8 @@ export default function Home() {
             <Widget>
               <Widget.Header>
                 <h1>Info Quiz</h1>
-                <meta property="og:h1" content="Info Quiz" key="h1" />
-              </Widget.Header>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                </Widget.Header>
 
               <Widget.Content>
                 <p>Teste os seus conhecimentos sobre informática básica e vamos ver em qual nível você está!</p>
