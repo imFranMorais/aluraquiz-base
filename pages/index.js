@@ -27,31 +27,33 @@ padding: 15px;
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
-        <QuizContainer>
+      <QuizContainer>
+        <head>
+          <meta property='og:url' content='https://aluraquiz-base.imfranmorais.vercel.app/' />
+        </head>
 
-            <Widget>
-              <Widget.Header>
-                <h1>Info Quiz</h1>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                </Widget.Header>
+        <Widget>
+          <Widget.Header>
+            <h1>INFO QUIZ</h1>
+          </Widget.Header>
 
-              <Widget.Content>
-                <p>Teste os seus conhecimentos sobre informática básica e vamos ver em qual nível você está!</p>
-              </Widget.Content>
-            </Widget>
+          <Widget.Content>
+            <p>Teste os seus conhecimentos sobre informática e vamos ver em qual nível você está!</p>
+          </Widget.Content>
+        </Widget>
 
-            <Widget>
-              <Widget.Header>
-                <h1>Quizes da Galera</h1>
-              </Widget.Header>
+        <Widget>
+          <Widget.Header>
+            <h1>QUIZES DA GALERA</h1>
+          </Widget.Header>
 
-              <Widget.Content>
-                <p>lorem lorem lorem</p>
-              </Widget.Content>
-            </Widget>
+          <Widget.Content>
+            <p>lorem lorem lorem</p>
+          </Widget.Content>
+        </Widget>
 
-          <Footer />
-        </QuizContainer>
+        <Footer />
+      </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/imfranmorais" />
     </QuizBackground>
   );
