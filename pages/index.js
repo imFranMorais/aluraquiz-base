@@ -32,6 +32,7 @@ export default function Home() {
             <Widget>
               <Widget.Header>
                 <h1>Info Quiz</h1>
+                <meta property="og:h1" content="Info Quiz" key="h1" />
               </Widget.Header>
 
               <Widget.Content>
