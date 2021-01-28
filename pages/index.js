@@ -64,7 +64,7 @@ export default function Home() {
               />
               <button type="submit" disabled={name.length === 0}>
                 Jogar
-                {name}
+                { name}
               </button>
             </form>
           </Widget.Content>
