@@ -63,8 +63,8 @@ export default function Home() {
                 placeholder="Diz aí seu nome"
               />
               <button type="submit" disabled={name.length === 0}>
-                Jogar
-                { name}
+                Jogar 
+                {name}
               </button>
             </form>
           </Widget.Content>
