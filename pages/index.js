@@ -1,10 +1,14 @@
+import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
 import db from '../db.json';
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
-import QuizBackground from '../src/components/QuizBackground'
-import QuizLogo from '../src/components/QuizLogo'
-import Widget from '../src/components/Widget'
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -25,12 +29,16 @@ padding: 15px;
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Alura Quiz - Modelo Base</title>
+      </Head>
       <QuizContainer>
-        <head>
-          <meta property='og:url' content='https://aluraquiz-base.imfranmorais.vercel.app/' />
-        </head>
+        <QuizLogo />
 
         <Widget>
           <Widget.Header>
@@ -38,7 +46,27 @@ export default function Home() {
           </Widget.Header>
 
           <Widget.Content>
-            <p>Teste os seus conhecimentos sobre informática e vamos ver em qual nível você está!</p>
+            <form onSubmit={function (infosDoEvento) {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
+              console.log('Fazendo uma submissão por meio do react');
+
+              // router manda para a próxima página
+            }}
+            >
+              <input
+                onChange={function (infosDoEvento) {
+                  // State
+                  // name = infosDoEvento.target.value;
+                  setName(infosDoEvento.target.value);
+                }}
+                placeholder="Diz aí seu nome"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+                {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
 
