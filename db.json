@@ -1,33 +1,99 @@
 {
     "bg": "https://www.lwtsistemas.com.br/wp-content/uploads/2019/11/Tecnologia-2.jpg",
-    "title": "Info Quiz",
-    "description": "Teste os seus conhecimentos sobre informática básica e vamos ver em qual nível você está!",
+    "title": "Quiz Informática #AluraQuiz",
+    "description": "Um quiz rápido sobre o seu computador!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://media.giphy.com/media/dX3JE0gxboS3Umuukf/giphy.gif",
+        "title": "O que significa HARDWARE?",
+        "description": "Vamos aquecer :)",
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "a parte lógica da máquina (os programas)",
+          "a parte física da máquina (as peças)",
+          "um aplicativo de edição de texto",
+          "um antivirus"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/DZH3OOAk9V4zK/giphy.gif",
+        "title": "O que significa Escanear ou Digitalizar?",
+        "answer": 2,
+        "alternatives": [
+           "Pressionar as teclas enquanto um texto aparece no Word",
+           "Apontar e ativar comandos com o ponteiro ao mexer o mouse",
+           "Capturar a imagem de fotos e documentos e transferir para o computador",
+           "Salvar músicas do computador em um CD ou DVD"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l49JRQC9RNa5j35a8/giphy.gif",
+        "title": "Qual o programa utilizado para escrever ou editar textos?",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Word",
+           "Excel",
+           "Power Point",
+           "Google"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l3vR85PnGsBwu1PFK/giphy.gif",
+        "title": "Clicando sobre a borda de uma janela e arrastando-a estaremos:",
+        "answer": 0,
+        "alternatives": [
+           "Movendo a janela",
+           "Incluindo uma nova janela",
+           "Restaurando a janela",
+           "Redimensionando o tamanho da janela"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/gk94kmWa87cVCXeCUG/giphy.gif",
+        "title": "Minimizar uma janela significa:",
+        "answer": 0,
+        "alternatives": [
+          "Reduzi-la a um botão na Barra de Tarefas",
+          "Ampliá-la de modo que ocupe toda a Área de Trabalho",
+          "Reduzi-la a um ícone na Área de Trabalho",
+          "Restaurá-la ao seu tamanho original"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif",
+        "title": "Qual o comando utilizado para Localizar e Substituir uma palavra no Word?",
+        "answer": 3,
+        "alternatives": [
+          "CTRL + R e CTRL + A",
+          "CTRL + X e CTRL + V",
+          "CTRL + A e CTRL + B",
+          "CTRL + L e CRTL + U"
+        ]
+      },{
+        "image": "https://media.giphy.com/media/3oKIPfv7sjANPRdW1i/giphy.gif",
+        "title": "Qual das opções abaixo representa uma célula no Excel?",
+        "answer": 1,
+        "alternatives": [
+           "11",
+           "B2",
+           "AN",
+           "33333"
+        ]
+      },{
+        "image": "https://media.giphy.com/media/l1IY5NRhxdCJYxsmA/giphy.gif",
+        "title": "O que significa Congelar Paineis no Excel?",
+        "answer": 2,
+        "alternatives": [
+           "Escrever uma fórmula incorreta",
+           "Somar os números de uma determinada coluna",
+           "Bloquear linha ou coluna para que sempre fique visivel",
+           "Salvar a planilha na Area de Trabalho"
         ]
       }
     ],
     "external": [
       ""
+    
     ],
     "theme": {
       "colors": {
